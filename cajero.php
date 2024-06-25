@@ -7,13 +7,29 @@ function menu() {
     echo "3. retirar dinero\n";
 }
 
-menu();
+$saldo = 1230;
 
-$continuar = true;
+while (true){
+    menu();
+    $opcion = readline("elecione un numero :");
 
-while ($continuar){
-    echo "ingrese una opcion :";
-    $opcion = readline();
+
+
+    switch ($opcion){
+
+        case '1':
+            echo "su saldo es : $saldo\n";
+            break;
+
+        case '2':
+            $deposito = readline("ingrese su cantidad a depositar : ");
+            $saldo += $deposito;
+            echo "su depocito fue exitoso\n";
+            break;
+        
+            case '3':
+                
+    }
 }
 
 
