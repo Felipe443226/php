@@ -9,3 +9,8 @@ function menu() {
 
 menu();
 
+while (true){
+    echo "ingrese una  opcion :";
+    $opcion = readline();
+}
+
